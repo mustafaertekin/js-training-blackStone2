@@ -27,8 +27,6 @@ function getRandomUnder (pCount) {
 // puts 1 to the cells randomly
 function createBlackStones (pMatrixArr, pPosArray) {
     let blackStoneNumber = getRandomUnder(26);
-    if(blackStoneNumber < 3) 
-        blackStoneNumber = 3;
     for (let i=0; i < blackStoneNumber; i++) {
         let {j,k} = findTheNextRandomPosition (pPosArray);
         pMatrixArr[j][k] = 1;
